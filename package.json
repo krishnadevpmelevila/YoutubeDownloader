@@ -16,7 +16,8 @@
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "node-downloader-helper": "^1.0.19"
+    "node-downloader-helper": "^1.0.19",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
