@@ -1,0 +1,31 @@
+
+
+
+    <div class="container mt-5">
+        <div class="row " id="iam">
+            {{#each data}}
+            <div id="sr" class="card col-md-4" style="width: 40rem;">
+                <img class="card-img-top" src="{{this.thumbnail.url}}"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">{{this.title}}</h2>
+                    <h3>Duration: {{this.duration_formatted}}</h3>
+                    <div class="p-2 row">
+                    <form  action="/downloadmp4" method="post">
+                    <input type="hidden" name="vid" value="{{this.id}}">
+                    <button  class=" m-2 btn btn-success" type="submit">Download MP4</a>
+                    </form>
+                    <form  action="/downloadmp3" method="post">
+                    <input type="hidden" name="mus" value="{{this.id}}">
+                    <button class="btn m-2 btn-success" type="submit">Download MP3</a>
+                    </form>
+                    </div>
+                </div>
+
+            </div>
+            {{/each}}
+           
+        </div>
+
+
+    </div>
