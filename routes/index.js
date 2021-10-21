@@ -72,7 +72,7 @@ router.post('/',validate(checkSchema(searchSchema)),(req,res)=>{
 
   var options = {
     method: 'GET',
-    url: 'https://simple-youtube-search.p.rapidapi.com/search',
+    url: 'https:// p.rapidapi.com/search',
     params: {query: req.body.search, type: 'video', safesearch: 'true'},
     headers: {
       'x-rapidapi-host': 'simple-youtube-search.p.rapidapi.com',
