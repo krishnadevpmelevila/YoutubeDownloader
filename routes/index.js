@@ -17,7 +17,7 @@ router.post('/downloadmp3', function (req, res) {
     params: { id: req.body.mus },
     headers: {
       'x-rapidapi-host': 'youtube-mp36.p.rapidapi.com',
-      'x-rapidapi-key': '149496b202msh3bc1ce64534abfbp12c6c3jsn0da37c1922b6'
+      'x-rapidapi-key': 'ab7de61726mshd2142f88fc2a5bbp18445djsnd7504c3cfd38'
     }
 
   };
@@ -35,7 +35,7 @@ router.post('/downloadmp4', function (req, res) {
     params: { id: req.body.vid },
     headers: {
       'x-rapidapi-host': 'ytstream-download-youtube-videos.p.rapidapi.com',
-      'x-rapidapi-key': '149496b202msh3bc1ce64534abfbp12c6c3jsn0da37c1922b6'
+      'x-rapidapi-key': 'ab7de61726mshd2142f88fc2a5bbp18445djsnd7504c3cfd38'
     }
   };
   axios.request(options).then(function (response) {
@@ -91,7 +91,7 @@ router.post('/', validate(checkSchema(searchSchema)), (req, res) => {
         params: { query: response.data.result.title, type: 'video', safesearch: 'true' },
         headers: {
           'x-rapidapi-host': 'simple-youtube-search.p.rapidapi.com',
-          'x-rapidapi-key': '149496b202msh3bc1ce64534abfbp12c6c3jsn0da37c1922b6'
+          'x-rapidapi-key': 'ab7de61726mshd2142f88fc2a5bbp18445djsnd7504c3cfd38'
         }
       };
       axios.request(options).then(function (response) {
@@ -111,7 +111,7 @@ router.post('/', validate(checkSchema(searchSchema)), (req, res) => {
       params: { query: req.body.search, type: 'video', safesearch: 'true' },
       headers: {
         'x-rapidapi-host': 'simple-youtube-search.p.rapidapi.com',
-        'x-rapidapi-key': '149496b202msh3bc1ce64534abfbp12c6c3jsn0da37c1922b6'
+        'x-rapidapi-key': 'ab7de61726mshd2142f88fc2a5bbp18445djsnd7504c3cfd38'
       }
     };
     axios.request(options).then(function (response) {
