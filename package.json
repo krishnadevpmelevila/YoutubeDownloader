@@ -13,11 +13,11 @@
     "express": "^4.16.4",
     "express-handlebars": "^5.3.4",
     "express-validator": "^6.13.0",
-    "hbs": "~4.0.4",
-    "http-errors": "~1.6.3",
+    "hbs": "^4.2.0",
     "morgan": "~1.9.1",
     "node-downloader-helper": "^1.0.19",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
